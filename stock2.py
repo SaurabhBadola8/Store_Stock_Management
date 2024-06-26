@@ -8,7 +8,7 @@ class cdata(Frame):
         self.ta=Text(self)
         self.ta.grid(row=0,column=0)
        
-        con=connect(db='badola',user='root',password='system',host='localhost')
+        con=connect(db='badola',user='root',password='root',host='localhost')
         cur=con.cursor()
         cur.execute("select * from stock")
         data=cur.fetchall()
