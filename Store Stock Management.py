@@ -91,7 +91,7 @@ class stock(Frame):
             print('error')
 
     def dele(self):
-        con=connect(db='badola',user='root',password='system',host='localhost')
+        con=connect(db='badola',user='root',password='root',host='localhost')
         cur=con.cursor()
         iname=self.t1.get()
         i=cur.execute("delete from stock where item='%s'"%(iname))
