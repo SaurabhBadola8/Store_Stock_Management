@@ -69,7 +69,7 @@ class stock(Frame):
         self.pack()
 
     def add(self):
-        con=connect(db='badola',user='root',password='system',host='localhost')
+        con=connect(db='badola',user='root',password='PASSWORD',host='localhost')
         cur=con.cursor()
         iname=self.t1.get()
         price=float(self.t2.get())
@@ -91,7 +91,7 @@ class stock(Frame):
             print('error')
 
     def dele(self):
-        con=connect(db='badola',user='root',password='root',host='localhost')
+        con=connect(db='badola',user='root',password='PASSWORD',host='localhost')
         cur=con.cursor()
         iname=self.t1.get()
         i=cur.execute("delete from stock where item='%s'"%(iname))
@@ -103,7 +103,7 @@ class stock(Frame):
             msg.showerror('Error Box','Record Not Found')
         
     def search(self):
-        con=connect(db='badola',user='root',password='system',host='localhost')
+        con=connect(db='badola',user='root',password='PASSWORD',host='localhost')
         cur=con.cursor()
         iname=self.t6.get()
         cur.execute("select * from stock where item='%s'"%(iname))
@@ -129,7 +129,7 @@ class stock(Frame):
         exit()
 
     def modify(self):
-        con=connect(db='badola',user='root',password='system',host='localhost')
+        con=connect(db='badola',user='root',password='PASSWORD',host='localhost')
         cur=con.cursor()
         iname=self.t1.get()
         price=int(self.t2.get())
