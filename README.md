@@ -1,3 +1,5 @@
+![Screenshot 2024-05-19 125235](https://github.com/SaurabhBadola8/Store_Stock_Management/assets/173368852/56acc7ba-fb41-4a84-92a8-e8b5bc00a41a)
+
 Objective: Manage stock items for a hypothetical store named "ONE MALL."
 GUI Elements:
 Labels: Used for displaying text instructions.
